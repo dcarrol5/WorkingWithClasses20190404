@@ -11,10 +11,10 @@ class Person {
         return this._firstName;
     }
     set lastName(newLastName) {
-        this.lastName = newLastName;
+        this._lastName = newLastName;
     }
     get lastName() {
-        return this.lastName;
+        return this._lastName;
     }
     set age(newAge) {
         if (!isNaN(newAge)) {
@@ -30,7 +30,5 @@ class Person {
 
 }
 
-get age(){
-    if(!isNaN(this.age))
-}
+
 module.exports = Person
